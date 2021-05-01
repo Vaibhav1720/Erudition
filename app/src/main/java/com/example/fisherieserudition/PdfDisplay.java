@@ -25,6 +25,11 @@ import java.util.List;
 
 public class PdfDisplay extends AppCompatActivity {
 
+
+    String[] links = {"gs://fisheries-erudition.appspot.com/Vaibhav Resume..pdf","http://enos.itcollege.ee/~jpoial/allalaadimised/reading/Android-Programming-Cookbook.pdf",
+            "http://enos.itcollege.ee/~jpoial/allalaadimised/reading/Android-Programming-Cookbook.pdf","https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
+            "http://www.africau.edu/images/default/sample.pdf","http://www.pdf995.com/samples/pdf.pdf", "https://www.cs.cmu.edu/afs/cs.cmu.edu/user/gchen/www/download/java/LearnJava.pdf"};
+
     WebView webView;
     private ProgressBar progressBar;
     @SuppressLint("SetJavaScriptEnabled")
@@ -53,7 +58,7 @@ public class PdfDisplay extends AppCompatActivity {
             }
         });
         //https://docs.google.com/viewerng/viewer?embedded=true&url=
-        webView.loadUrl("https://docs.google.com/gview?embedded=true&url="+"http://enos.itcollege.ee/~jpoial/allalaadimised/reading/Android-Programming-Cookbook.pdf");
+        webView.loadUrl("https://docs.google.com/gview?embedded=true&url="+links[position]);
 
     }
 }
